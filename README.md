@@ -1,5 +1,8 @@
 # Aplicação Preditiva de Obesidade — Streamlit
 
+## 🔗 Aplicação em produção
+Acesse o app preditivo aqui: https://app-obesidade-tech-challenge-eyetpkyhewtznjyjyf6wgk.streamlit.app/
+
 ## O que tem aqui
 - `app.py` — a tela preditiva (formulário + integração com o modelo).
 - `requirements.txt` — bibliotecas que o Streamlit Cloud precisa instalar.
@@ -50,5 +53,5 @@ Esse link é o que você vai colocar no arquivo `.doc`/`.txt` de entrega, junto 
 ## Erros comuns
 - **"ModuleNotFoundError"**: alguma biblioteca usada no `app.py` não está no `requirements.txt`. Adicione o nome da lib e faça um novo commit (o Streamlit Cloud reimplanta sozinho a cada push).
 - **"FileNotFoundError: modelo_obesidade.pkl"**: o arquivo do modelo não foi enviado para o repositório, ou está em uma subpasta diferente da raiz.
-- **Versão do scikit-learn diferente entre o Colab e o deploy**: se aparecer aviso/erro de versão incompatível ao carregar o `.pkl`, adicione a versão exata usada no Colab no `requirements.txt`, por exemplo `scikit-learn==1.5.2` (confira a versão rodando `import sklearn; print(sklearn.__version__)` no Colab).
+- **Versão do scikit-learn diferente entre o Colab e o deploy**: se aparecer aviso/erro de versão incompatível ao carregar o `.pkl`, adicione a versão exata usada no Colab no `requirements.txt` (neste projeto: `scikit-learn==1.6.1`, com Python 3.12 selecionado nas "Advanced settings" do deploy).
 - **App "dorme" após um tempo sem uso**: é normal no plano gratuito do Streamlit Cloud — ele volta ao acessar o link novamente, só demora alguns segundos para "acordar".
