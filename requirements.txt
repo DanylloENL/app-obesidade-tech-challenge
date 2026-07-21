@@ -1,5 +1,7 @@
+# Versão travada para bater exatamente com o ambiente do Colab
+# (Python 3.12.13 / scikit-learn 1.6.1).
 streamlit
 pandas
-scikit-learn
+scikit-learn==1.6.1
 joblib
 matplotlib
